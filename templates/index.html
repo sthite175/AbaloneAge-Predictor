@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            background-image: url('/static/abalone.jpg');
+            background-size: cover;
+            color: navy;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 style="color: navy;">Abalone Age Predictor</h1>
+    <h4 style="color: darkviolet;">Welcome to our Abalone Age Detector App!</h4>
+    <h4 style="color: black;">By Using This Model We Can Predict Abalone Age. Please Provide Below Information</h4>
+    <form method="POST" action="prediction">
+        <label><strong>Sex</strong></label>
+        <input type="text"  name="Sex">
+        <br>
+        <br>
+        <label><strong>Length</strong></label>
+        <input type="text"  name="Length">
+        <br>
+        <br>
+        <label><strong>Diameter</strong></label>
+        <input type="text"  name="Diameter">
+        <br>
+        <br>
+        <label><strong>Height</strong></label>
+        <input type="text" name="Height">
+        <br>
+        <br>
+        <label><strong>Whole Weight</strong></label>
+        <input type="text" name="Whole_weight">
+        <br>
+        <br>
+        <label><strong>Shucked Weight</strong></label>
+        <input type="text" name="Shucked_weight">
+        <br>
+        <br>
+        <label><strong>Viscera Weight</strong></label>
+        <input type="text" name="Viscera_weight">
+        <br>
+        <br>
+        <label><strong>Shell Weight</strong></label>
+        <input type="text" name="Shell_weight">
+        <br>
+        <br>
+        <input type="submit" value="Predict Abalone Age">
+        <br>
+        <br>
+        <p style="color: blue;">
+            <strong>{{result}}</strong>
+        </p>
+
+    </form>
+
+</body>
+</html>
+
+
+

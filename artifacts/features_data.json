@@ -1,0 +1,1 @@
+{"columns": ["Sex", "Length", "Diameter", "Height", "Whole_weight", "Shucked_weight", "Viscera_weight", "Shell_weight"], "Sex": {"Female": 0, "Male": 1, "Infant": 2}}
